@@ -4,10 +4,28 @@ body {
   color: #434455;
 }
 
+.visually-hidden {
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -18,8 +36,24 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+/** ==============HEADER================ */
+
+.header{
+  border-bottom: 1px solid #e7e9fc;
+  width: 1440px;
+  height: 72px;
+} 
+
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -45,23 +79,16 @@ button {
   margin-right: 76px;
 }
 
-/** ==============HEADER================ */
-
-.header{
-  border-bottom: 1px solid #e7e9fc;
-  width: 1440px;
-  height: 72px;
-} 
 .header-logo {
   color: #2e2f42;
 }
 
-nav-list {
+.nav-list {
   display: flex;
   gap: 40px;
 }
 
-address-list {
+.address-list {
   display: flex;
   gap: 40px;
 }
@@ -83,12 +110,13 @@ display: block;
 
 .header-menu-link:hover,
 .header-menu-link:focus {
-  color: #404bbf
+  color: #404bbf;
 }
 
 .contacts {
-  font-style: normal
+  font-style: normal;
   margin-left: auto;
+  display: block;
 }
 
 .contacts-link {
@@ -109,6 +137,9 @@ display: block;
 
 .hero {
   background: #2e2f42;
+  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 
 .hero-title {
@@ -118,6 +149,8 @@ display: block;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin: 0 auto 48px;
+  
 }
 
 .hero-btn {
@@ -127,6 +160,9 @@ display: block;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  margin: 0 auto;
+  display: block;
+  padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -138,11 +174,19 @@ display: block;
 
 /** ================FEATURES================= */
 
-.visually-hidden {
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.container-features {
+   display: flex;
+   gap: 24px;
+   justify-content: space-between;
+}
+
+.features {
+  padding: 120px 15px;
+  margin: 0 auto;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
@@ -151,6 +195,7 @@ display: block;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 
 .features-item-text {
@@ -175,10 +220,22 @@ display: block;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 72px;
+}
+
+.team-card {
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
 
 .team-item {
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+  width: calc((100% - 72px) / 4);
+}
+
+.text-item {
+ padding: 32px 16px;
 }
 
 .team-item-name {
@@ -188,6 +245,7 @@ display: block;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 
 .team-item-profecion {
