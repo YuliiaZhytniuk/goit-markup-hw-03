@@ -4,12 +4,6 @@ body {
   color: #434455;
 }
 
-.visually-hidden {
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
@@ -139,7 +133,7 @@ display: block;
   background: #2e2f42;
   height: 600px;
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -150,7 +144,7 @@ display: block;
   text-align: center;
   color: #fff;
   margin: 0 auto 48px;
-  
+  max-width: 496px;
 }
 
 .hero-btn {
@@ -163,6 +157,10 @@ display: block;
   margin: 0 auto;
   display: block;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -181,8 +179,16 @@ display: block;
 }
 
 .features {
-  padding: 120px 15px;
+  padding: 120px 0;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  margin-bottom: 8px;
 }
 
 .features-item {
@@ -220,7 +226,7 @@ display: block;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-card {
@@ -236,7 +242,7 @@ display: block;
 }
 
 .text-item {
- padding: 32px 16px;
+ padding: 32px 0;
 }
 
 .team-item-name {
@@ -246,7 +252,7 @@ display: block;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .team-item-profecion {
@@ -262,7 +268,8 @@ display: block;
 
 .projects {
   text-transform: capitalize;
-  padding-top: 27px;
+  padding-top: 120px; 
+  padding-bottom: 120px;
 }
 
 .projects-title {
@@ -320,12 +327,11 @@ display: block;
 
 .logo-btn {
   margin-bottom: 16px;
-  display: block;
+  display: inline-block;
 }
 
 .footer-logo {
   color: #f4f4fd;
-  
 }
 
 .footer-text {
