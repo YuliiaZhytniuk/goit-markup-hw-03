@@ -172,6 +172,19 @@ display: block;
 
 /** ================FEATURES================= */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container-features {
    display: flex;
    gap: 24px;
@@ -181,14 +194,6 @@ display: block;
 .features {
   padding: 120px 0;
   margin: 0 auto;
-}
-
-.visually-hidden {
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  margin-bottom: 8px;
 }
 
 .features-item {
@@ -201,7 +206,7 @@ display: block;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -339,4 +344,6 @@ display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  min-width: 264px;
+  height: 72px;
 }
