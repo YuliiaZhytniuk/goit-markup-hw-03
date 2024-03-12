@@ -70,11 +70,14 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 
 .header-logo {
   color: #2e2f42;
+}
+
+.studio-logo {
+  margin-right: 76px;
 }
 
 .nav-list {
@@ -344,6 +347,5 @@ display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  min-width: 264px;
-  height: 72px;
+  max-width: 264px;
 }
